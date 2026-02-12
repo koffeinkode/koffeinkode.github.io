@@ -123,6 +123,11 @@
             color: var(--text);
         }
 
+        .project.inactive {
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
         .tag {
             display: inline-block;
             font-size: 0.625rem;
@@ -206,15 +211,15 @@
                 <div class="project-arrow">&rarr;</div>
             </a>
 
-            <a href="https://koffeinkode.github.io/badger/" class="project" target="_blank" rel="noopener">
+            <span class="project inactive">
                 <div class="project-number">02</div>
                 <div class="project-content">
                     <div class="project-name">Badger</div>
                     <div class="project-desc">Importer deltakerlister og generer navneskilt med QR-koder til utskrift.</div>
                     <span class="tag">verktøy</span>
                 </div>
-                <div class="project-arrow">&rarr;</div>
-            </a>
+                <div class="project-arrow"></div>
+            </span>
 
             <a href="https://koffeinkode.github.io/kaffekalkyle/" class="project" target="_blank" rel="noopener">
                 <div class="project-number">03</div>
